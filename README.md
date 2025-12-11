@@ -8,7 +8,7 @@ Een leuk en leerzaam spel ontwikkeld met **Godot 4** en **Dialogic**!
 ## 🌐 Speel het spel online
 
 Je kunt het spel direct spelen via GitHub Pages:  
-[Panda Match Quest](https://hu-digital-education-lab.github.io/2526-minegdg-egp1-Thuutje2/)
+[Panda Match Quest](https://thuutje2.github.io/PandaMathQuest/)
 
 ---
 
