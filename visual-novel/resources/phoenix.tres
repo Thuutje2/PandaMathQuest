@@ -1,0 +1,104 @@
+[gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://cnuk4oyfj835s"]
+
+[ext_resource type="Texture2D" uid="uid://cr6opgd5o68n7" path="res://assets/phoenix/idle/frame_0_delay-3.5s.png" id="1_2jtr7"]
+[ext_resource type="Texture2D" uid="uid://8600f2wg7k8o" path="res://assets/phoenix/confident-idle/frame_0.png" id="1_lau61"]
+[ext_resource type="Texture2D" uid="uid://jok0dgqcfrrx" path="res://assets/phoenix/confident-idle/frame_1.png" id="2_fhgjg"]
+[ext_resource type="Texture2D" uid="uid://bunn8vs6fc25c" path="res://assets/phoenix/idle/frame_1_delay-0.1s.png" id="2_nsdyn"]
+[ext_resource type="Texture2D" uid="uid://dlpda56vaymje" path="res://assets/phoenix/idle/frame_2_delay-0.2s.png" id="3_6q2ky"]
+[ext_resource type="Texture2D" uid="uid://3qoghtbsfmuj" path="res://assets/phoenix/confident-idle/frame_2.png" id="3_8bfqg"]
+[ext_resource type="Texture2D" uid="uid://byivfdid2phwu" path="res://assets/phoenix/confident-talking/frame_0.png" id="4_28w8n"]
+[ext_resource type="Texture2D" uid="uid://bt2ek2twgsrbe" path="res://assets/phoenix/talking/frame_0_delay-0.2s.png" id="4_gvq82"]
+[ext_resource type="Texture2D" uid="uid://7skqklf2cjfw" path="res://assets/phoenix/confident-talking/frame_1.png" id="5_7m3pg"]
+[ext_resource type="Texture2D" uid="uid://c2hiyf4uirpcp" path="res://assets/phoenix/talking/frame_1_delay-0.2s.png" id="5_uya5u"]
+[ext_resource type="Texture2D" uid="uid://ddu77n3gmuqpa" path="res://assets/phoenix/confident-talking/frame_2.png" id="6_pn2nl"]
+[ext_resource type="Texture2D" uid="uid://c5p5duu6demb8" path="res://assets/phoenix/talking/frame_2_delay-0.2s.png" id="6_vn2d2"]
+[ext_resource type="Texture2D" uid="uid://0l3swbpk2hvv" path="res://assets/phoenix/laugh-talking/frame_00.png" id="10_ggjq5"]
+[ext_resource type="Texture2D" uid="uid://wfui6fmhdm6g" path="res://assets/phoenix/laugh-talking/frame_01.png" id="11_4nnk3"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lau61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fhgjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8bfqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_lau61")
+}, {
+"duration": 15.0,
+"texture": ExtResource("2_fhgjg")
+}],
+"loop": true,
+"name": &"confident-idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_28w8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7m3pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pn2nl")
+}],
+"loop": true,
+"name": &"confident-talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2jtr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nsdyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6q2ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_2jtr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nsdyn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ggjq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4nnk3")
+}],
+"loop": true,
+"name": &"laugh-talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_gvq82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uya5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vn2d2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gvq82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uya5u")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]

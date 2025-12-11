@@ -1,0 +1,30 @@
+[
+	{"location": "office"},
+	{"speaker": "Apollo", "text": "Phew, another busy day at the office.", "show_character": "Trucy"},
+	{"speaker": "Trucy", "text": "Tell me about it. I almost tripped over a pile of case files on the floor!", "expression": "confident"},
+	{"speaker": "Phoenix", "text": "Haha, welcome to my world. This office is always full of surprises.", "expression": "laugh"},
+	{"speaker": "Apollo", "text": "So, what’s on the agenda today?"},
+	{"speaker": "Trucy", "text": "Well, we could organize the case files, or maybe take a little break first.", "expression": "happy"},
+	{"choices":
+		[
+			{"text": "Help clean and organize the office.", "goto": "organize"},
+			{"text": "Take a break and play a quick game.", "goto": "break"}
+		]
+	},
+
+	{"anchor": "organize"},
+	{"speaker": "Apollo", "text": "Alright, let’s get this place in shape."},
+	{"speaker": "Trucy", "text": "Finally! I’ll start stacking the files alphabetically."},
+	{"speaker": "Phoenix", "text": "Thanks, both of you. This office might actually look professional for once!", "expression": "confident"},
+	{"goto": "end"},
+
+	{"anchor": "break"},
+	{"speaker": "Apollo", "text": "You know what? Let’s take five. Work can wait."},
+	{"speaker": "Trucy", "text": "Ooh! I’ll grab the deck of cards!", "expression": "happy"},
+	{"speaker": "Phoenix", "text": "Fine, but only one round… then back to work, deal?"},
+	{"goto": "end"},
+
+	{"anchor": "end"},
+	{"speaker": "Phoenix", "text": "Good teamwork today! Let’s keep it up."},
+	{"next_scene": "", "transition": "fade"}
+]

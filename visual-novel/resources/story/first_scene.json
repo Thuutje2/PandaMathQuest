@@ -1,0 +1,28 @@
+[
+	{"location": "courtroom"},
+	{"speaker": "Phoenix", "text": "Hi! My name is Phoenix!"},
+	{"speaker": "Trucy", "text": "Hey there! I am Trucy!"},
+	{"speaker": "Apollo", "text": "Hello, it's nice to meet you two!"},
+	{"speaker": "Phoenix", "text": "So, what brings you here today?"},
+	{"speaker": "Trucy", "text": "We're just excited to spend some time in godot!"},
+	{"speaker": "Phoenix", "text": "Haha, sounds like a plan, what do you want to do Apollo?"},
+	{"choices":
+		[
+			{"text": "First choice.", "goto": "first_choice"},
+			{"text": "Second choice", "goto": "second_choice"}
+		]
+	},
+	{"anchor": "first_choice"},
+	{"speaker": "Phoenix", "text": "So you go for the first choice"},
+	{"speaker": "Trucy", "text": "ooh exciting"},
+	{"goto": "end"},
+	
+	{"anchor": "second_choice"},
+	{"speaker": "Trucy", "text": "nice, you are going for the second choice"},
+	{"speaker": "Phoenix", "text": "lets goo"},
+	{"goto": "end"},
+	
+	{"anchor": "end"},
+	{"speaker": "Phoenix", "text": "Thank you!! have a nice day!"},
+	{"next_scene": "second_scene", "transition": "fade"}
+]

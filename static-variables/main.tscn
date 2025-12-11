@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://blywfsshaq6ff"]
+
+[ext_resource type="Script" uid="uid://b5423fisiwvun" path="res://canvas_layer.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://dssja88pp7d6k" path="res://button.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("1_0xm2m")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 323.0
+offset_top = 51.0
+offset_right = 372.0
+offset_bottom = 127.0
+text = "0
+"
+
+[node name="Button" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 89.0
+offset_top = 170.0
+offset_right = 203.0
+offset_bottom = 272.0
+text = "+1"
+
+[node name="Button2" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 199.0
+offset_top = 387.0
+offset_right = 313.0
+offset_bottom = 489.0
+text = "+1"
+
+[node name="Button3" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 392.0
+offset_top = 234.0
+offset_right = 506.0
+offset_bottom = 336.0
+text = "+1"
+
+[node name="Button4" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 54.0
+offset_top = 501.0
+offset_right = 168.0
+offset_bottom = 603.0
+text = "+1"
+
+[node name="Button5" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 467.0
+offset_top = 513.0
+offset_right = 581.0
+offset_bottom = 615.0
+text = "+1"
+
+[node name="Button6" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 677.0
+offset_top = 267.0
+offset_right = 791.0
+offset_bottom = 369.0
+text = "+1"
+
+[node name="Button7" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 770.0
+offset_top = 454.0
+offset_right = 884.0
+offset_bottom = 556.0
+text = "+1"
+
+[node name="Button8" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 842.0
+offset_top = 123.0
+offset_right = 956.0
+offset_bottom = 225.0
+text = "+1"
+
+[node name="Button9" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 994.0
+offset_top = 316.0
+offset_right = 1108.0
+offset_bottom = 418.0
+text = "+1"
+
+[node name="Button10" parent="CanvasLayer" instance=ExtResource("1_ig7tw")]
+offset_left = 643.0
+offset_top = 51.0
+offset_right = 757.0
+offset_bottom = 153.0
+text = "+1"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="CanvasLayer/Button2" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button3" to="CanvasLayer/Button3" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button4" to="CanvasLayer/Button4" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button5" to="CanvasLayer/Button5" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button6" to="CanvasLayer/Button6" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button7" to="CanvasLayer/Button7" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button8" to="CanvasLayer/Button8" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button9" to="CanvasLayer/Button9" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button10" to="CanvasLayer/Button10" method="_on_pressed"]

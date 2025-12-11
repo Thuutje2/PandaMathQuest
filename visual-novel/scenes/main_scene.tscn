@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfgdsfpy1fvii"]
+
+[ext_resource type="Script" uid="uid://b12mh4ob2j7cf" path="res://scripts/main.gd" id="1_gubc5"]
+[ext_resource type="AudioStream" uid="uid://crekvtrhma2up" path="res://sounds/sfx-dink.wav" id="2_rt2n2"]
+[ext_resource type="Texture2D" uid="uid://beberlgsww43y" path="res://assets/backgrounds/courtroom.png" id="3_c16ls"]
+[ext_resource type="PackedScene" uid="uid://cgn8lay88xefk" path="res://scenes/character.tscn" id="4_18nlu"]
+[ext_resource type="PackedScene" uid="uid://2n6bd2e41cd5" path="res://scenes/dialog_ui.tscn" id="5_c1pb6"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_gubc5")
+
+[node name="NextSentenceSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_rt2n2")
+volume_db = -28.764
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_c16ls")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer2"]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="CharacterSprite" parent="CanvasLayer2/Control" instance=ExtResource("4_18nlu")]
+unique_name_in_owner = true
+position = Vector2(0, -134)
+scale = Vector2(2.5, 2.5)
+
+[node name="DialogUI" parent="CanvasLayer2" instance=ExtResource("5_c1pb6")]
+unique_name_in_owner = true
